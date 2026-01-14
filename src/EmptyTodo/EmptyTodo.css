@@ -1,0 +1,67 @@
+/* Contenedor que limita el ancho al centro */
+.Shield-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.Medieval-Shield {
+  position: relative;
+  width: 280px; /* Tamaño contenido, no ocupa todo el ancho */
+  padding: 30px;
+  background: linear-gradient(135deg, #d7ccc8 0%, #bcaaa4 100%); /* Colores piedra/cuero claro */
+  border: 4px solid #5d4037; /* Borde café bronce */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%); /* Forma de escudo heráldico */
+  text-align: center;
+}
+
+.Shield-Crown {
+  font-size: 24px;
+  margin-bottom: 10px;
+  filter: sepia(1);
+}
+
+.Shield-Symbol {
+  font-size: 45px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.Shield-Title {
+  font-family: 'MedievalSharp', cursive;
+  color: #3e2723;
+  font-size: 22px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.Shield-Divider {
+  width: 50px;
+  height: 2px;
+  background: #5d4037;
+  margin: 15px auto;
+  opacity: 0.5;
+}
+
+.Shield-Text {
+  font-family: 'MedievalSharp', cursive;
+  color: #5d4037;
+  font-size: 14px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Detalles de remaches para el realismo medieval */
+.Rivet {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #3e2723;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 2px rgba(255,255,255,0.5);
+}
+.top-left { top: 10px; left: 10px; }
+.top-right { top: 10px; right: 10px; }

@@ -1,7 +1,7 @@
 import {CompleteIcon} from './CompleteIcon'
 import {DeleteIcon} from './DeleteIcon'
 import React from 'react'
-import { useMedievalSounds } from './useMedievalSounds';
+import { useMedievalSounds } from '../useMedievalSounds';
 import './TodoItem.css';
 
 function TodoItem(props) {

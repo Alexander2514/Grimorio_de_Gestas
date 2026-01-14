@@ -1,7 +1,7 @@
 import './TodoItem.css';
 import { GiQuill } from "react-icons/gi";
 import React from 'react';
-import { useMedievalSounds } from './useMedievalSounds';
+import { useMedievalSounds } from '../useMedievalSounds';
 
 
 function CompleteIcon({ completed, onComplete }) {

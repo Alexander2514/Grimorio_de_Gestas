@@ -1,0 +1,42 @@
+/* Estilos base para el contador */
+.TodoCounter {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+  letter-spacing: 1px;
+}
+
+.TodoCounter span {
+  font-weight: bold;
+  color: #8B0000; /* Rojo oscuro para resaltar números */
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+}
+
+/* Estado de Error */
+.TodoCounter.Counter-Error {
+  color: #a00000; /* Rojo ladrillo oscuro */
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgba(160, 0, 0, 0.7);
+}
+
+/* Estado Vacío */
+.TodoCounter.Counter-Empty {
+  color: #4a321f; /* Marrón oscuro del pergamino */
+  font-size: 1.8rem;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+
+/* Estado por defecto */
+.TodoCounter.Counter-Default {
+  color: #3e2723; /* Marrón oscuro para el texto principal */
+}
+/* src/TodoCounter/TodoCounter.css */
+.TodoCounter.Empty {
+  color: #5d4037; /* Tono cuero oscuro para armonizar */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
