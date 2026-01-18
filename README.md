@@ -21,3 +21,6 @@ El proyecto fue construido siguiendo principios de modularidad y persistencia de
 * **CSS3 Avanzado:** Uso de variables, animaciones `@keyframes` y personalización de `::-webkit-scrollbar`.
 * **React Icons:** Específicamente la librería `GiQuill` para representar la pluma del escriba.
 * **Local Storage API:** Para el almacenamiento local de datos del usuario.
+
+  ***Link***
+  https://alexander2514.github.io/Grimorio_de_Gestas/
