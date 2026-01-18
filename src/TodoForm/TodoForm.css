@@ -1,60 +1,82 @@
 .TodoForm-parchment {
+  background-color: #f4e4bc; /* Color pergamino premium */
+  padding: 40px;
   width: 90%;
-  max-width: 320px;
-  background-color: #f5e6d3; /* Color crema similar a tus items */
-  padding: 30px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
-  border: 4px solid #5d4037; /* Borde madera oscura */
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+  align-items: center;
+  /* Borde doble estilo marco antiguo */
+  border: 2px solid #5d4037;
+  outline: 6px double #5d4037;
+  outline-offset: -12px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+}
+
+.TodoForm-decoration {
+  color: #8b4513;
+  font-size: 20px;
+  opacity: 0.5;
 }
 
 .TodoForm-label {
   font-family: 'MedievalSharp', cursive;
-  font-size: 22px;
+  font-size: 26px;
   color: #3e2723;
-  text-align: center;
-  margin-bottom: 20px;
+  margin: 15px 0 25px 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .TodoForm-textarea {
-  background: rgba(255, 255, 255, 0.4);
-  border: 2px solid #8b4513;
+  width: 100%;
+  height: 120px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #8b4513; /* Línea de escritura antigua */
   font-family: 'MedievalSharp', cursive;
-  padding: 15px;
-  font-size: 16px;
-  height: 100px;
+  font-size: 18px;
   color: #2b1d1a;
-  outline: none;
+  padding: 10px;
   resize: none;
+  text-align: center;
+  outline: none;
 }
 
 .TodoForm-buttonContainer {
-  margin-top: 25px;
+  margin-top: 30px;
   display: flex;
-  justify-content: space-around;
+  gap: 15px;
+  width: 100%;
 }
 
 .TodoForm-button {
+  flex: 1;
+  padding: 12px;
   font-family: 'MedievalSharp', cursive;
-  padding: 10px 15px;
+  font-size: 16px;
   cursor: pointer;
-  border: none;
-  transition: transform 0.2s;
+  border: 1px solid #3e2723;
+  transition: all 0.2s ease;
 }
 
 .TodoForm-button--cancel {
-  background-color: #a00000; /* Rojo lacre */
+  background: #f4e4bc;
+  color: #a00000; /* Rojo lacre */
+}
+
+.TodoForm-button--cancel:hover {
+  background: #a00000;
   color: white;
 }
 
 .TodoForm-button--add {
-  background-color: #daa520; /* Dorado real */
-  color: #3e2723;
+  background: #3e2723; /* Madera oscura */
+  color: #daa520; /* Dorado */
 }
 
-.TodoForm-button:hover {
-  transform: scale(1.05);
+.TodoForm-button--add:hover {
+  background: #daa520;
+  color: #3e2723;
+  box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
 }

@@ -29,7 +29,7 @@ React.useEffect(()=>{
     setLoading(false);
     setError(true)
 }
-  },3000)
+  },4000)
 
 }, [ItemName,initial_item])//Este array le indica a React: "Solo vuelve a ejecutar todo el código dentro del useEffect si el valor de itemName o de initial_item cambia". Si estos valores se mantienen iguales entre un renderizado y otro, React se saltará el efecto para ahorrar energía y evitar procesos repetitivos.
   

@@ -25,7 +25,7 @@
   box-shadow: 0 8px 16px rgba(0,0,0,0.7);
 }
 
-/* --- NUEVO: EFECTO DE CHISPAS AL CLIC ---  aniacion de estampado*/
+
 .CreateTodoButton:active {
   animation: stampButton 0.2s ease-out forwards;
 }

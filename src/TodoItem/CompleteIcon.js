@@ -9,7 +9,7 @@ function CompleteIcon({ completed, onComplete }) {
 
   const handleComplete = () => {
     if (!completed) playSound('stamp'); // Sonido de impacto al marcar
-    onComplete();//ejecucion de la funcion para marcar coo completado el Todo
+    onComplete();//ejecucion de la funcion para marcar como completado el Todo
   };
 
 

@@ -1,4 +1,4 @@
-/* Estilos base para el contador */
+
 .TodoCounter {
   font-family: 'MedievalSharp', cursive;
   font-size: 2.2rem;
@@ -10,32 +10,31 @@
 
 .TodoCounter span {
   font-weight: bold;
-  color: #8B0000; /* Rojo oscuro para resaltar números */
+  color: #8B0000; 
   text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
 }
 
-/* Estado de Error */
+
 .TodoCounter.Counter-Error {
-  color: #a00000; /* Rojo ladrillo oscuro */
+  color: #a00000; 
   font-size: 2rem;
   text-shadow: 0 0 10px rgba(160, 0, 0, 0.7);
 }
 
-/* Estado Vacío */
 .TodoCounter.Counter-Empty {
-  color: #4a321f; /* Marrón oscuro del pergamino */
+  color: #4a321f; 
   font-size: 1.8rem;
   font-style: italic;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
 }
 
-/* Estado por defecto */
+
 .TodoCounter.Counter-Default {
-  color: #3e2723; /* Marrón oscuro para el texto principal */
+  color: #3e2723; 
 }
-/* src/TodoCounter/TodoCounter.css */
+
 .TodoCounter.Empty {
-  color: #5d4037; /* Tono cuero oscuro para armonizar */
+  color: #5d4037; 
   font-size: 1.8rem;
   margin-bottom: 20px;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.5);

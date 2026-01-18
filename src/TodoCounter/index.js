@@ -7,7 +7,7 @@ function TodoCounter({ totalTodos, completedTodos, loading, error }) {
   const getMessage = () => {
     if (error) return "¡La Oscuridad corrompe los registros!";
     if (totalTodos === 0) return "Tu Estandarte espera ser alzado...";
-    return `Has cumplido ${completedTodos} de ${totalTodos} decretos`;
+    return `Has cumplido ${completedTodos} de ${totalTodos} Misiones`;
   };
 
   return (

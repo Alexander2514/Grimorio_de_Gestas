@@ -10,7 +10,7 @@ function TodoSearch({
 
   return(
     <input 
-      placeholder="Buscar TODO"
+      placeholder="Buscar Mision"
       className="TodoSearch"
       value= {SearchValue}
       onChange={(event) => {

@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -25,4 +26,52 @@ code {
   box-sizing: border-box; /* Fundamental para evitar el scroll horizontal */
   margin: 0;
   padding: 0;
+}
+
+
+
+/* Estilos globales para la barra de desplazamiento */
+
+/* 1. Ancho de la barra */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* 2. El fondo de la barra (La "funda" o canal oscuro) */
+::-webkit-scrollbar-track {
+  background: #1a1510; /* Un café casi negro muy profundo */
+  border-left: 1px solid #3e2723;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* 3. La parte que se mueve (La "Hoja de la Espada") */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg, 
+    #4a4a4a 0%, 
+    #d1d1d1 50%, 
+    #4a4a4a 100%
+  ); /* Degradado metálico para simular el filo */
+  border: 2px solid #3e2723;
+  border-radius: 10px 10px 2px 2px; /* Punta redondeada arriba */
+  box-shadow: 0 0 5px rgba(218, 165, 32, 0.3); /* Un leve brillo dorado */
+}
+
+/* 4. Efecto al pasar el cursor o hacer scroll */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    90deg, 
+    #5a5a5a 0%, 
+    #ffffff 50%, 
+    #5a5a5a 100%
+  ); /* La espada brilla cuando se usa */
+  border-color: #daa520; /* El borde se vuelve dorado real */
+}
+
+* {
+  /* scrollbar-color: [Color del deslizador] [Color del fondo] */
+  scrollbar-color: #d1d1d1 #1a1510; /* Hoja de acero y funda oscura */
+  
+  /* thin | auto | none */
+  scrollbar-width: auto; 
 }

@@ -54,7 +54,9 @@ const addTodo = (text) => {
   const CompleteTodo= (todoText) => {
     const newTodos= [...todos];
     const todoIndex= newTodos.findIndex((todo) => todo.text === todoText);
-    newTodos[todoIndex].completed=true
+    // En lugar de forzarlo a true, lo invertimos
+  // Si es true, pasa a false. Si es false, pasa a true.
+  newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
 
 
     SaveTodos(newTodos);

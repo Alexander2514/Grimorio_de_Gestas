@@ -10,11 +10,11 @@ function TodoItem(props) {
  const { playSound } = useMedievalSounds();
   //mover a DeleteIcon
   const onDeleteAnimation = () => {
-    playSound('scroll'); // Sonido de papel enrollándose
+    playSound('scroll');
     setIsDeleting(true); 
     setTimeout(() => {
       props.onDelete();
-    }, 900); // Sincronizado con ultraRealisticRoll
+    }, 900); 
   };
   
 

@@ -11,7 +11,7 @@ function EmptyTodo() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Adorno superior del escudo */}
+       
         <div className="Shield-Crown">👑</div>
         
         <div className="Shield-Body">
@@ -29,7 +29,7 @@ function EmptyTodo() {
           </p>
         </div>
         
-        {/* Remaches de metal en las esquinas */}
+        
         <div className="Rivet top-left"></div>
         <div className="Rivet top-right"></div>
       </motion.div>
