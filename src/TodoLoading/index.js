@@ -9,7 +9,7 @@ function TodoLoading() {
       pathLength: 1,
       opacity: 1,
       transition: {
-        duration: 3,
+        duration: 4,
         ease: "easeInOut"
       }
     }

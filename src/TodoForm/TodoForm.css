@@ -1,0 +1,60 @@
+.TodoForm-parchment {
+  width: 90%;
+  max-width: 320px;
+  background-color: #f5e6d3; /* Color crema similar a tus items */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #5d4037; /* Borde madera oscura */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.TodoForm-label {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 22px;
+  color: #3e2723;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.TodoForm-textarea {
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid #8b4513;
+  font-family: 'MedievalSharp', cursive;
+  padding: 15px;
+  font-size: 16px;
+  height: 100px;
+  color: #2b1d1a;
+  outline: none;
+  resize: none;
+}
+
+.TodoForm-buttonContainer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.TodoForm-button {
+  font-family: 'MedievalSharp', cursive;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.TodoForm-button--cancel {
+  background-color: #a00000; /* Rojo lacre */
+  color: white;
+}
+
+.TodoForm-button--add {
+  background-color: #daa520; /* Dorado real */
+  color: #3e2723;
+}
+
+.TodoForm-button:hover {
+  transform: scale(1.05);
+}

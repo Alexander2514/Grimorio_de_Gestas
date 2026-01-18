@@ -9,6 +9,9 @@ import { defaultTodos } from './defaultTodos';
 import {TodoLoading} from '../TodoLoading'
 import {TodoError} from '../TodoError'
 import {EmptyTodo} from '../EmptyTodo'
+import { Modal } from './Modal';
+import { TodoForm } from '../TodoForm';
+
 
 // localStorage.setItem('Todos_v1',JSON.stringify(defaultTodos))
 //localStorage.removeItem('Todos_v1')
@@ -21,6 +24,21 @@ function App() {
     error
   
   } = useLocalStorage('Todos_v1',defaultTodos);
+
+  const [openModal,SetOpenModal] =  React.useState(false)
+  
+const addTodo = (text) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      completed: false,
+      text,
+    });
+    SaveTodos(newTodos);
+  };
+
+
+
+
 
   const [SearchValue, setSearchValue] = React.useState('');
   console.log('User: ',SearchValue);
@@ -43,7 +61,7 @@ function App() {
   }
 
   const DeleteTodo= (todoText) => {
-    //localizacion de elementos en la lista , y copia de los todos en uno nuevo
+    //localizacion de elementos en la lista , y copia de los Todos en uno nuevo
     const newTodos= [...todos];
     const todoIndex= newTodos.findIndex((todo) => todo.text === todoText);
 
@@ -88,7 +106,21 @@ function App() {
      
 
 
-    <CreateTodoButton/>
+    <CreateTodoButton
+    // openModal= {openModal}
+    SetOpenModal = {SetOpenModal}
+    />
+
+     {openModal && (
+      <Modal>
+        <TodoForm
+        addTodo={addTodo}
+        SetOpenModal={SetOpenModal}
+        />
+      </Modal>
+     )}
+
+
     </React.Fragment>
      
   );

@@ -2,17 +2,25 @@ import React from 'react';
 import { GiCrossedSwords } from "react-icons/gi"; // Icono temático
 import './CreateTodoButton.css';
 import { useMedievalSounds } from '../useMedievalSounds';
-
-function CreateTodoButton(props) {
+import { Modal } from '../App/Modal';
+function CreateTodoButton({SetOpenModal,openModal}) {
     const { playSound } = useMedievalSounds();
  
 
   return (
     <button 
       className="CreateTodoButton"
-      onClick={() =>{
+      onClick={
+        (event) =>{
         playSound('click'); // Sonido de metal/sello
-        props.setOpenModal(prev => !prev);
+         
+        console.log(event.target);
+        
+        
+          SetOpenModal(state => !state)
+        
+         console.log('Debio cambiar el estado de: ', SetOpenModal );
+         
       }}
     >
       <GiCrossedSwords />
