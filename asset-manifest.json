@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Grimorio_de_Gestas/static/css/main.f9c8fd12.css",
+    "main.js": "/Grimorio_de_Gestas/static/js/main.2a444bd7.js",
+    "static/media/pexels-pixabay-235985.jpg": "/Grimorio_de_Gestas/static/media/pexels-pixabay-235985.73f8d3fd347877384566.jpg",
+    "index.html": "/Grimorio_de_Gestas/index.html",
+    "main.f9c8fd12.css.map": "/Grimorio_de_Gestas/static/css/main.f9c8fd12.css.map",
+    "main.2a444bd7.js.map": "/Grimorio_de_Gestas/static/js/main.2a444bd7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9c8fd12.css",
+    "static/js/main.2a444bd7.js"
+  ]
+}
